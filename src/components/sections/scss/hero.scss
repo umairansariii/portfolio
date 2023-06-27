@@ -1,0 +1,22 @@
+
+.hero {
+    display: flex;
+    height: calc(100vh - 70px);
+    background-color: red;
+}
+.hero-left,
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 100px;
+}
+.hero-left {
+    background-color: #ff90e8;
+    border-right: 2px solid black;
+}
+.hero-right {
+    background-color: #ffc900;
+}
