@@ -1,15 +1,9 @@
-
-
-import logo from '../../assets/images/logo.png';
-
 import './scss/header.scss';
 
 export default function Header() {
     return (
         <header className="header">
-            <div className="header-logo">
-                <img src={logo} alt="umairansari-logo" />
-            </div>
+            <div className="header-logo">umairansari</div>
             <nav className='header-routes'>
                 <a className='header-routes-link' href="#">Home</a>
                 <a className='header-routes-link' href="#">About</a>

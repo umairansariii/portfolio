@@ -9,10 +9,11 @@
 .header-logo {
     cursor: pointer;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 4px 40px;
-}
-.header-logo img {
-    height: 100%;
+    font-size: 40px;
+    font-weight: 500;
 }
 .header-routes {
     display: flex;
