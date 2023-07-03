@@ -1,0 +1,36 @@
+.developer {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+.developer-left,
+.developer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.developer-left {
+    position: relative;
+    border-right: 2px solid black;
+    background-color: #ffc900;
+}
+.developer-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.developer-right {
+    padding: 100px;
+    background-color: #90a8ed;
+}
+.developer-left-client {
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    font-size: 22px;
+}
+.developer-left-client:hover {
+    text-decoration: underline;
+}

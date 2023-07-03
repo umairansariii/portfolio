@@ -1,0 +1,39 @@
+.designer {
+    display: flex;
+    height: calc(100vh - 70px);
+    border-bottom: 2px solid black;
+}
+.designer-left,
+.designer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.designer-left {
+    padding: 100px;
+    border-right: 2px solid black;
+    background-color: #ff90e8;
+}
+.designer-right {
+    position: relative;
+    align-items: center;
+    padding: 80px;
+    background-color: #ffc900;
+}
+.designer-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.designer-right-client {
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    font-size: 22px;
+}
+.designer-right-client:hover {
+    text-decoration: underline;
+}

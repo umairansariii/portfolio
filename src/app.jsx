@@ -1,12 +1,13 @@
-
 import Header from './components/header/header';
-import HeroSection from './components/sections/hero';
+import DesignerSection from './components/sections/designer';
+import DeveloperSection from './components/sections/developer';
 
 export default function App() {
     return (
         <div className="site">
             <Header/>
-            <HeroSection/>
+            <DesignerSection/>
+            <DeveloperSection/>
         </div>
     )
 }

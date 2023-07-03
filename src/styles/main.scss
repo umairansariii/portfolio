@@ -7,7 +7,7 @@
 }
 body {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     font-family: 'DM Sans', sans-serif;
 }
 .title-big {
@@ -15,9 +15,27 @@ body {
     font-size: 100px;
     font-weight: 400;
     line-height: 100px;
-    letter-spacing: -3px;
+    letter-spacing: -5px;
 }
 .title-sub {
-    font-size: 34px;
+    font-size: 30px;
     letter-spacing: -1px;
+    margin: 5px 0px;
+}
+.btn-pry {
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 20px 80px;
+    margin: 30px 0px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: black;
+    transition: box-shadow 100ms, transform 100ms;
+}
+.btn-pry:hover {
+    box-shadow: 5px 5px white, 5px 5px 0px 2px black;
+    transform: translate(-5px,-5px);
 }
