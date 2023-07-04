@@ -1,6 +1,7 @@
 .developer {
     display: flex;
     height: calc(100vh - 70px);
+    border-bottom: 2px solid black;
 }
 .developer-left,
 .developer-right {
@@ -33,4 +34,44 @@
 }
 .developer-left-client:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .developer {
+        flex-direction: column-reverse;
+    }
+    .developer-left,
+    .developer-right {
+        height: 50%;
+        width: 100%;
+    }
+    .developer-right {
+        border-bottom: 2px solid black;
+    }
+    .developer-left {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .developer {
+        height: fit-content;
+    }
+    .developer-left {
+        height: calc(100vh - 70px);
+        padding: 0px;
+    }
+    .developer-right {
+        height: calc(100vh - 70px);
+        padding: 80px;
+    }
+    .developer-left-client {
+        left: 30px;
+        bottom: 30px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .developer-right {
+        padding: 50px;
+    }
 }

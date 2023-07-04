@@ -39,3 +39,37 @@ body {
     box-shadow: 5px 5px white, 5px 5px 0px 2px black;
     transform: translate(-5px,-5px);
 }
+
+@media screen and (max-width: 1500px) {
+    .title-big {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .title-sub {
+        font-size: 25px;
+    }
+    .btn-pry {
+        padding: 18px 70px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .btn-pry {
+        padding: 18px 60px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title-big {
+        font-size: 60px;
+        line-height: 55px;
+        letter-spacing: -2px;
+    }
+    .title-sub {
+        font-size: 22px;
+    }
+    .btn-pry {
+        padding: 15px 50px;
+        font-size: 18px;
+    }
+}

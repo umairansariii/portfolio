@@ -37,3 +37,41 @@
 .designer-right-client:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1200px) {
+    .designer {
+        flex-direction: column;
+    }
+    .designer-left,
+    .designer-right {
+        height: 50%;
+        width: 100%;
+    }
+    .designer-left {
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+}
+@media screen and (max-width: 720px) {
+    .designer {
+        height: fit-content;
+    }
+    .designer-left {
+        height: calc(100vh - 70px);
+        padding: 80px;
+    }
+    .designer-right {
+        height: calc(100vh - 70px);
+        padding: 20px;
+    }
+    .designer-right-client {
+        left: 30px;
+        bottom: 30px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .designer-left {
+        padding: 50px;
+    }
+}

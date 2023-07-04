@@ -1,0 +1,57 @@
+.process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 60px;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+.process-path {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    width: 1200px;
+    border-radius: 200px;
+    margin: 40px 0px;
+    padding: 35px;
+    font-size: 24px;
+    border: 2px solid black;
+    background-color: #ffc900;
+}
+.process-path-i {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+.process-path-ii {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+}
+.process-path-iii {
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+}
+.process-path-iv {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+.process-path-arrow-i {
+    height: 100%;
+    width: 150px;
+    border: 2px solid black;
+    border-right: none;
+    border-radius: 200px 0px 0px 200px;
+}
+.process-path-arrow-iii {
+    height: 100%;
+    width: 150px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0px 200px 200px 0px;
+}
