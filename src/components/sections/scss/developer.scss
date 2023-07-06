@@ -13,6 +13,7 @@
 }
 .developer-left {
     position: relative;
+    padding: 20px;
     border-right: 2px solid black;
     background-color: #ffc900;
 }
@@ -49,6 +50,7 @@
         border-bottom: 2px solid black;
     }
     .developer-left {
+        padding: 0px;
         border-right: none;
     }
 }

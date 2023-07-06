@@ -8,8 +8,8 @@ export default function App() {
         <div className="site">
             <Header/>
             <DesignerSection/>
+            <ProcessSection/>
             <DeveloperSection/>
-            {/* <ProcessSection/> */}
         </div>
     )
 }
