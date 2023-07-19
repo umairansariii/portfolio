@@ -7,7 +7,7 @@ export default function DeveloperSection() {
             <div className="developer-left">
                 <img src={mascot}/>
                 <div className="developer-left-client">
-                    ➤ MeemBakers, Client
+                    ➤ MeemBakers, Pakistan
                 </div>
             </div>
             <div className="developer-right">
