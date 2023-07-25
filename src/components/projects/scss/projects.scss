@@ -1,0 +1,139 @@
+.project {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.project-view {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.project-highlights {
+    height: 100%;
+    max-height: 700px;
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.project-highlights-lhs,
+.project-highlights-rhs {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+}
+.project-highlights-lhs svg,
+.project-highlights-rhs svg {
+    margin: auto;
+}
+.project-highlights-lhs {
+    top: 50%;
+    left: 0px;
+    transform: translate(30px,-50%);
+}
+.project-highlights-rhs {
+    top: 50%;
+    right: 0px;
+    transform: translate(-30px,-50%);
+}
+.project-highlights:hover .project-highlights-lhs,
+.project-highlights:hover .project-highlights-rhs {
+    display: grid;
+}
+.project-highlights-srl {
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    left: 50%;
+    gap: 10px;
+    padding: 0px 10px;
+    transform: translate(-50%,-20px);
+}
+.project-highlights-srl > div {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.project-highlights:hover .project-highlights-srl {
+    display: flex;
+}
+.project-highlights-img {
+    height: 100%;
+}
+.project-details {
+    display: flex;
+}
+.project-details-markdown {
+    width: 100%;
+}
+.project-details-markdown-title {
+    font-size: 36px;
+    padding: 20px 30px;
+    border-bottom: 2px solid black;
+}
+.project-details-markdown-description {
+    font-size: 16px;
+    padding: 20px 30px;
+}
+.project-details-markdown-description p {
+    margin-bottom: 10px;
+}
+.project-details-markdown-description ul {
+    padding-left: 40px;
+    margin: 10px 0px;
+}
+.project-details-markdown-description ul p {
+    margin-bottom: 0px;
+}
+.project-details-info {
+    width: 450px;
+    border-left: 2px solid black;
+}
+.project-details-sticky {
+    position: sticky;
+    top: 70px;
+    padding: 20px;
+}
+.project-details-info-txt {
+    margin-bottom: 15px;
+}
+.project-details-info-btn {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: black;
+    transition: box-shadow 100ms, transform 100ms;
+}
+.project-details-info-btn a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.project-details-info-btn:hover {
+    box-shadow: 4px 4px white, 4px 4px 0px 2px black;
+    transform: translate(-4px,-4px);
+}
+.project-details-info-tiles {
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.project-details-info-tiles > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+.project-details-info-tiles > div:last-child {
+    border-bottom: none;
+}

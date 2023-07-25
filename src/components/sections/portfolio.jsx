@@ -35,7 +35,7 @@ export default function PortfolioSection() {
     const [joke, setJoke] = useState(false);
 
     useEffect(() => {
-        setData(Projects)
+        setData(Projects);
     },[]);
     return (
         <section className="portfolio">
