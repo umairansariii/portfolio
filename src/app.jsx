@@ -1,17 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
+
+// Routes
+import Home from './routes/home';
+import Projects from './routes/projects';
+
+// Components
 import Header from './components/header/header';
-import DesignerSection from './components/sections/designer';
-import ProcessSection from './components/sections/process';
-import DeveloperSection from './components/sections/developer';
-import PortfolioSection from './components/sections/portfolio';
 
 export default function App() {
     return (
-        <div className="site">
+        <div className="app">
             <Header/>
-            <DesignerSection/>
-            <ProcessSection/>
-            <DeveloperSection/>
-            <PortfolioSection/>
+            <Routes>
+                <Route path='/' element={<Home/>}></Route>
+                <Route path='/projects' element={<Projects/>}></Route>
+            </Routes>
         </div>
     )
 }
