@@ -8,8 +8,10 @@ import IconLeft from '../../assets/svgs/icons/left';
 import IconRight from '../../assets/svgs/icons/right';
 
 export default function Project(props) {
+    // State
     const [serial, setSerial] = useState(0);
 
+    // Methods
     const nextHighlight = () => {
         const totalCovers = props.meta.covers.length;
         updateHighlight((serial+1) % totalCovers);
@@ -63,7 +65,7 @@ export default function Project(props) {
                             <p className='project-details-info-txt'>Project information ✨</p>
                             <div className="project-details-info-tiles">
                                 <div><h4>Location</h4><p>{props.meta.location}</p></div>
-                                <div><h4>Budget</h4><p>${props.meta.budget} ~ ${props.meta.budget + (props.meta.budget/5)}</p></div>
+                                <div><h4>Budget</h4><p>${props.meta.budget} ~ ${props.meta.budget + 15}</p></div>
                                 <div><h4>Delivery date</h4><p>{formatDate(props.meta.date)}</p></div>
                                 <div><h4>Estimated time</h4><p>{props.meta.duration} days</p></div>
                                 {

@@ -29,7 +29,7 @@
     padding: 0px 20px;
 }
 .header-routes-link {
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 .header-routes-link:hover {
@@ -43,14 +43,14 @@
     display: flex;
     align-items: center;
     padding: 0px 50px;
-    border-left: 2px solid black;
+    border-left: 2px solid #000000;
 }
 .header-cta-btn:last-child {
-    color: white;
-    background-color: black;
+    color: #ffffff;
+    background-color: #000000;
 }
 .header-cta-btn:hover {
-    color: black;
+    color: #000000;
     background-color: #ff90e8;
 }
 .header-menu {

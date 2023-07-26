@@ -1,4 +1,6 @@
 import './scss/developer.scss';
+
+// Resources
 import mascot from '../../assets/images/mascot-developer.png';
 
 export default function DeveloperSection() {
@@ -7,7 +9,7 @@ export default function DeveloperSection() {
             <div className="developer-left">
                 <img src={mascot}/>
                 <div className="developer-left-client">
-                    ➤ MeemBakers, Pakistan
+                    <a href="#" target='blank'>➤ MeemBakers, Pakistan</a>
                 </div>
             </div>
             <div className="developer-right">

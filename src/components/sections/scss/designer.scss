@@ -1,7 +1,7 @@
 .designer {
     display: flex;
     height: calc(100vh - 70px);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
 }
 .designer-left,
 .designer-right {
@@ -13,7 +13,7 @@
 }
 .designer-left {
     padding: 100px;
-    border-right: 2px solid black;
+    border-right: 2px solid #000000;
     background-color: #ff90e8;
 }
 .designer-right {
@@ -34,6 +34,10 @@
     bottom: 40px;
     font-size: 22px;
 }
+.designer-right-client a {
+    color: #000000;
+    text-decoration: none;
+}
 .designer-right-client:hover {
     text-decoration: underline;
 }
@@ -49,7 +53,7 @@
     }
     .designer-left {
         border-right: none;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #000000;
     }
     .designer-right {
         padding: 40px;

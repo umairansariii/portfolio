@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import './scss/header.scss';
+
+// Resources
 import IconMenu from '../../assets/svgs/icons/menu';
 import IconClose from '../../assets/svgs/icons/close';
 
@@ -33,12 +35,12 @@ export default function Header() {
             {
                 state && 
                 <nav className='header-routes'>
-                    <a className='header-routes-link' href="#">Home</a>
-                    <a className='header-routes-link' href="#">About</a>
-                    <a className='header-routes-link' href="#">Work</a>
-                    <a className='header-routes-link' href="#">Contact</a>
+                    <Link className='header-routes-link' to={'/'}>Home</Link>
+                    <Link className='header-routes-link' to={'/'}>About</Link>
+                    <Link className='header-routes-link' to={'/projects'}>Work</Link>
+                    <Link className='header-routes-link' to={'/'}>Contact</Link>
                     {
-                        screen && <a className='header-routes-link' href="#">Login</a>
+                        screen && <Link className='header-routes-link' to={'/'}>Login</Link>
                     }
                 </nav>
             }

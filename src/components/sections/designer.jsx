@@ -1,4 +1,6 @@
 import './scss/designer.scss';
+
+// Resources
 import mascot from "../../assets/images/mascot-designer.png";
 
 export default function DesignerSection() {
@@ -12,7 +14,7 @@ export default function DesignerSection() {
             <div className="designer-right">
                 <img src={mascot}/>
                 <div className="designer-right-client">
-                    ➤ Super Zaeden Comic, Fiverr
+                    <a href="https://umairansari.com/projects?title=super-zaeden" target='blank'>➤ Super Zaeden Comic, Fiverr</a>
                 </div>
             </div>
         </section>

@@ -5,7 +5,7 @@
     align-items: center;
     height: fit-content;
     padding: 60px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
 }
 .portfolio .title-sub {
     text-align: center;
@@ -25,12 +25,16 @@
     cursor: pointer;
     height: 550px;
     width: 350px;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 5px;
     transition: box-shadow 100ms;
 }
+.portfolio-card a {
+    color: #000000;
+    text-decoration: none;
+}
 .portfolio-card:hover {
-    box-shadow: 5px 5px 0px 0px black;
+    box-shadow: 5px 5px 0px 0px #000000;
 }
 .portfolio-card-img {
     height: 50%;

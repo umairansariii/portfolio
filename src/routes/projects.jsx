@@ -9,9 +9,11 @@ import PortfolioSection from "../components/sections/portfolio";
 import Database from '../database/docs/projects';
 
 export default function Projects() {
+    // State
     const [searchParams] = useSearchParams();
     const [data, setData] = useState(null);
     
+    // Effect
     useEffect(() => {
         const title = searchParams.get('title');
         const queryResult = Database.filter(e => e.url == title);

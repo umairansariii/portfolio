@@ -1,7 +1,7 @@
 .developer {
     display: flex;
     height: calc(100vh - 70px);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
 }
 .developer-left,
 .developer-right {
@@ -14,7 +14,7 @@
 .developer-left {
     position: relative;
     padding: 20px;
-    border-right: 2px solid black;
+    border-right: 2px solid #000000;
     background-color: #ffc900;
 }
 .developer-left img {
@@ -33,6 +33,10 @@
     bottom: 40px;
     font-size: 22px;
 }
+.developer-left-client a {
+    color: #000000;
+    text-decoration: none;
+}
 .developer-left-client:hover {
     text-decoration: underline;
 }
@@ -47,7 +51,7 @@
         width: 100%;
     }
     .developer-right {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #000000;
     }
     .developer-left {
         padding: 0px;
