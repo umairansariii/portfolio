@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import formatDate from '../../helpers/formatDateToMonthYear';
-import './scss/portfolio.scss';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import formatDate from "../../helpers/formatDateToMonthYear";
+import "./scss/portfolio.scss";
 
 // Resources
-import IconMap from '../../assets/svgs/icons/map';
-import IconTime from '../../assets/svgs/icons/time';
-import IconInfo from '../../assets/svgs/icons/info';
+import IconMap from "../../assets/svgs/icons/map";
+import IconTime from "../../assets/svgs/icons/time";
+import IconInfo from "../../assets/svgs/icons/info";
 
 // Datebase
-import Database from '../../database/docs/projects.js';
+import Database from "../../database/docs/projects.js";
 
 function PortfolioCard(props) {
     return (

@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import formatDate from '../../helpers/formatDateToMonthYear';
-import './scss/projects.scss';
+import { useState } from "react";
+import ReactMarkdown from "react-markdown";
+import formatDate from "../../helpers/formatDateToMonthYear";
+import "./scss/projects.scss";
 
 // Resources
-import IconLeft from '../../assets/svgs/icons/left';
-import IconRight from '../../assets/svgs/icons/right';
+import IconLeft from "../../assets/svgs/icons/left";
+import IconRight from "../../assets/svgs/icons/right";
 
 export default function Project(props) {
     // State
@@ -34,7 +34,7 @@ export default function Project(props) {
                             props.meta.covers.map((e, id) => {
                                 return <div 
                                     onClick={() => updateHighlight(id)}
-                                    style={{backgroundColor: serial == id? '#000':'#fff'}}
+                                    style={{backgroundColor: serial == id? "#000":"#fff"}}
                                     key={id}>
                                 </div>
                             })
@@ -55,14 +55,15 @@ export default function Project(props) {
                     </div>
                     <div className="project-details-info">
                         <div className="project-details-sticky">
+                            <p className="project-details-info-txt">Get explore, see resources 👇</p>
                             {
                                 props.meta.download &&
-                                <>
-                                    <p className='project-details-info-txt'>Get explore, see resources 👇</p>
-                                    <div className="project-details-info-btn"><a target="blank" href={props.meta.download}>Download Files</a></div>
-                                </>
+                                <div className="project-details-info-btn"><a target="blank" href={props.meta.download}>Download Files</a></div>
+                            }{
+                                props.meta.preview &&
+                                <div className="project-details-info-btn"><a target="blank" href={props.meta.preview}>Preview Project</a></div>
                             }
-                            <p className='project-details-info-txt'>Project information ✨</p>
+                            <p className="project-details-info-txt">Project information ✨</p>
                             <div className="project-details-info-tiles">
                                 <div><h4>Location</h4><p>{props.meta.location}</p></div>
                                 <div><h4>Budget</h4><p>${props.meta.budget} ~ ${props.meta.budget + 15}</p></div>

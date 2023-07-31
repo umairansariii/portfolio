@@ -1,8 +1,10 @@
 // Components
-import DesignerSection from '../components/sections/designer';
-import ProcessSection from '../components/sections/process';
-import DeveloperSection from '../components/sections/developer';
-import PortfolioSection from '../components/sections/portfolio';
+import DesignerSection from "../components/sections/designer";
+import ProcessSection from "../components/sections/process";
+import DeveloperSection from "../components/sections/developer";
+import QuoteSection from "../components/sections/quote";
+import AboutSection from "../components/sections/about";
+import PortfolioSection from "../components/sections/portfolio";
 
 export default function Home() {
     return (
@@ -10,6 +12,8 @@ export default function Home() {
             <DesignerSection/>
             <ProcessSection/>
             <DeveloperSection/>
+            <QuoteSection/>
+            <AboutSection/>
             <PortfolioSection/>
         </div>
     )

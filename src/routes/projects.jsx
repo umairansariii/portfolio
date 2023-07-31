@@ -6,7 +6,7 @@ import Project from "../components/projects/projects";
 import PortfolioSection from "../components/sections/portfolio";
 
 // Database
-import Database from '../database/docs/projects';
+import Database from "../database/docs/projects";
 
 export default function Projects() {
     // State
@@ -15,7 +15,7 @@ export default function Projects() {
     
     // Effect
     useEffect(() => {
-        const title = searchParams.get('title');
+        const title = searchParams.get("title");
         const queryResult = Database.filter(e => e.url == title);
 
         setData(queryResult? queryResult[0]: null);
