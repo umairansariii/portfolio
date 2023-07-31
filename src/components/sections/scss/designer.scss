@@ -18,7 +18,6 @@
 }
 .designer-right {
     position: relative;
-    align-items: center;
     padding: 80px;
     background-color: #ffc900;
 }
@@ -44,31 +43,24 @@
 
 @media screen and (max-width: 1200px) {
     .designer {
+        height: fit-content;
         flex-direction: column;
     }
     .designer-left,
     .designer-right {
-        height: 50%;
+        height: calc(100vh - 70px);
         width: 100%;
     }
     .designer-left {
         border-right: none;
         border-bottom: 2px solid #000000;
     }
-    .designer-right {
-        padding: 40px;
-    }
 }
 @media screen and (max-width: 720px) {
-    .designer {
-        height: fit-content;
-    }
     .designer-left {
-        height: calc(100vh - 70px);
         padding: 80px;
     }
     .designer-right {
-        height: calc(100vh - 70px);
         padding: 20px;
     }
     .designer-right-client {

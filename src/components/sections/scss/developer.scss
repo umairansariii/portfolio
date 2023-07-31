@@ -13,7 +13,7 @@
 }
 .developer-left {
     position: relative;
-    padding: 20px;
+    padding: 30px;
     border-right: 2px solid #000000;
     background-color: #ffc900;
 }
@@ -43,31 +43,27 @@
 
 @media screen and (max-width: 1200px) {
     .developer {
+        height: fit-content;
         flex-direction: column-reverse;
     }
     .developer-left,
     .developer-right {
-        height: 50%;
+        height: calc(100vh - 70px);
         width: 100%;
+    }
+    .developer-left {
+        padding: 40px;
+        border-right: none;
     }
     .developer-right {
         border-bottom: 2px solid #000000;
     }
-    .developer-left {
-        padding: 0px;
-        border-right: none;
-    }
 }
 @media screen and (max-width: 720px) {
-    .developer {
-        height: fit-content;
-    }
     .developer-left {
-        height: calc(100vh - 70px);
         padding: 0px;
     }
     .developer-right {
-        height: calc(100vh - 70px);
         padding: 80px;
     }
     .developer-left-client {
