@@ -5,15 +5,15 @@
     align-items: center;
     height: fit-content;
     text-align: center;
-    padding: 60px;
+    padding: 200px 60px;
     border-bottom: 2px solid #000000;
     background-color: #ffffff;
 }
 .process .title-sub {
     text-align: center;
     width: 100%;
-    max-width: 900px;
-    padding: 0px 10px;
+    max-width: 920px;
+    padding: 0px 20px;
 }
 .process-path {
     position: relative;
@@ -60,6 +60,9 @@
     right: 200px;
 }
 @media screen and (max-width: 1200px) {
+    .process {
+        padding: 100px 60px;
+    }
     .process-path-i,
     .process-path-ii,
     .process-path-iii,
@@ -77,7 +80,7 @@
 }
 @media screen and (max-width: 900px) {
     .process {
-        padding: 60px 0px;
+        padding: 80px 0px;
     }
     .process-path {
         border-left: none;
@@ -97,6 +100,9 @@
     }
 }
 @media screen and (max-width: 720px) {
+    .process {
+        padding: 50px 0px;
+    }
     .process-path-i,
     .process-path-iii {
         width: fit-content;

@@ -1,4 +1,4 @@
-import './scss/process.scss';
+import "./scss/process.scss";
 
 export default function ProcessSection() {
     return (
